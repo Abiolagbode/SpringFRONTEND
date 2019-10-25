@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello jQuery</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="hello.js"></script>
+        <script src="add"></script>
+    </head>
+
+    <body>
+        
+        
+        <!-- <div>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
+            <p class="greeting-createdAt">Created date is </p>
+            <p class="greeting-updatedAt">Updated date is </p>
+        </div> -->
+
+        <div class="container">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-info add-new" id="btn"><i class="fa fa-plus"></i> Add New</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-bordered" id="tbl">
+                        <thead>
+                            <tr>
+                                <th class="id">ID</th>
+                                <th class="name">NAME</th>
+                                <th class="content">CONTENT</th>
+                                <th class="createdAt">CREATED DATE</th>
+                                <th class="updatedAt">UPDATED DATE</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        
+                    </table>
+                    
+                </div>
+            </div>     
+
+            <br/>
+            <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="button" class="btn btn-success" id="getAllNotes">Get All Book</button>
+                </div>
+              </div>
+              <div id="btn" style="padding: 20px 10px 20px 50px">
+              <ul class="list-group"></ul>
+              </div>
+          </div>
+          <!-- putting my style is here -->
+          <style type="text/css">
+            body {
+                color: #404E67;
+                background: #F5F7FA;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .table-wrapper {
+                width: 1200px;
+                margin: 30px auto;
+                background: #fff;
+                padding: 20px;	
+                box-shadow: 0 1px 1px rgba(0,0,0,.05);
+            }
+            .table-title {
+                padding-bottom: 10px;
+                margin: 0 0 10px;
+            }
+            .table-title h2 {
+                margin: 6px 0 0;
+                font-size: 22px;
+            }
+            .table-title .add-new {
+                float: right;
+                height: 30px;
+                font-weight: bold;
+                font-size: 12px;
+                text-shadow: none;
+                min-width: 100px;
+                border-radius: 50px;
+                line-height: 13px;
+            }
+            .table-title .add-new i {
+                margin-right: 4px;
+            }
+            table.table {
+                table-layout: fixed;
+            }
+            table.table tr th, table.table tr td {
+                border-color: #e9e9e9;
+            }
+            table.table th i {
+                font-size: 13px;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+            table.table th:last-child {
+                width: 100px;
+            }
+            table.table td a {
+                cursor: pointer;
+                display: inline-block;
+                margin: 0 5px;
+                min-width: 24px;
+            }    
+            table.table td a.add {
+                color: #27C46B;
+            }
+            table.table td a.edit {
+                color: #FFC107;
+            }
+            table.table td a.delete {
+                color: #E34724;
+            }
+            table.table td i {
+                font-size: 19px;
+            }
+            table.table td a.add i {
+                font-size: 24px;
+                margin-right: -1px;
+                position: relative;
+                top: 3px;
+            }    
+            table.table .form-control {
+                height: 32px;
+                line-height: 32px;
+                box-shadow: none;
+                border-radius: 2px;
+            }
+            table.table .form-control.error {
+                border-color: #f50000;
+            }
+            table.table td .add {
+                display: none;
+            }
+        </style>
+    </body>
+</html>

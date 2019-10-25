@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="newresponses.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-9">
+				<table class="table table-striped">
+				  <thead>
+				    <tr>
+				      <th scope="col">Id</th>
+				      <th scope="col">Name</th>
+				      <th scope="col">Content</th>
+                      <th scope="col">Created Date</th>
+                      <th scope="col">Upateted Date</th>
+                      <th scope="col">Action</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+						
+				  </tbody>
+				</table>
+			</div>
+			<!-- <div class="col-3">
+				<div class="form-group form-vales">
+					<input id="name" class="form-control" placeholder="Id">
+					<input id="age" class="form-control" placeholder="Name">
+                    <input id="book" class="form-control" placeholder="Content">
+                    <input id="book" class="form-control" type="date" placeholder="Created Date">
+                    <input id="book" class="form-control" type="date" placeholder="Updated Date">
+					<button id="save" type="button" class="btn btn-info">Save</button>
+					<button id="update" type="button" class="btn btn-success">Update</button>
+					<div class="alert" role="alert">
+						
+					</div>
+				</div>
+            </div> -->
+     <div class="col-3">
+            <div id="postResultDiv" align="center">
+            </div>
+            <div class="container">
+          <form class="form-horizontal" id="noteorm">
+            
+        </br>
+            <h2>Save and Update</h2>
+            <hr>
+            <div class="form-group">
+                    <label class="control-label col-sm-2" for="id">Id:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="id" placeholder="Enter id" name="id" readonly>
+                    </div>
+                  </div>
+            <div class="form-group">
+                
+              <label class="control-label col-sm-2" for="name">Name:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="content">Content:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="content" placeholder="Enter content" name="content">
+              </div>
+            </div>
+            <!-- <div class="form-group">
+              <label class="control-label col-sm-2" for="createdAt">Created Date:</label>
+              <div class="col-sm-10">          
+                <input type="date" class="form-control" id="createdAt" name="createdAt" readonly>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="updatedAt">Updated Date:</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="updatedAt" name="updatedAt" readonly>
+              </div>
+            </div>
+             -->
+            <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+                    <button id="save" type="button" class="btn btn-info">Save</button>
+					<button id="update" type="button" class="btn btn-success">Update</button>
+					<div class="alert" role="alert">
+						
+					</div>
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+              </div>
+            </div>
+          </form>
+        </div>
+          <br/>
+          
+          <!-- <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-success" id="getAllNotes">Get All Book</button>
+              </div>
+            </div>
+            <div id="getResultDiv" style="padding: 20px 10px 20px 50px">
+            <ul class="list-group"></ul>
+            </div> -->
+        </div>
+        
+		</div>
+	</div>
+   
+</body>
+</html>
